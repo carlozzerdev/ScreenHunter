@@ -1,0 +1,14 @@
+ScreenHunter 0.1.0
+
+La aplicacion no utiliza paquetes NuGet de terceros.
+La distribucion portable incluye binarios de Microsoft .NET 10.0.12 y
+Microsoft.WindowsDesktop.App 10.0.12, junto con hostfxr de la misma version.
+Estos componentes tienen sus propias condiciones y avisos.
+
+Se incluyen los textos de licencia y avisos suministrados con la instalacion
+de .NET empleada para generar el paquete en:
+  licenses/LICENSE.txt
+  licenses/ThirdPartyNotices.txt
+
+No se incluyen fuentes de Windows: se usan las instaladas en el equipo.
+ScreenHunter no declara que la licencia del runtime sea la de su codigo propio.

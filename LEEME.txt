@@ -1,0 +1,29 @@
+SCREENHUNTER 0.1.2 - WINDOWS 11 x64
+
+Extrae todo el ZIP y abre ScreenHunter.exe. No necesitas instalar .NET.
+Conserva todos los archivos y carpetas que acompanian al ejecutable.
+
+Inicio rapido:
+1. Capturar o Ctrl+Alt+S para elegir una region.
+2. Herramientas a la izquierda; propiedades a la derecha.
+3. Shift+clic selecciona varios; Ctrl+G agrupa; Ctrl+Shift+G desagrupa.
+4. Manejador exterior para girar. Ctrl+rueda cambia zoom.
+5. Copiar imagen o Exportar imagen para obtener el resultado.
+6. Guardar proyecto conserva objetos editables en un archivo .shproj.
+7. Ajustes: idioma espanol/ingles, atajo, modo, retardo y cursor.
+8. Cerrar deja la aplicacion en bandeja; Salir la cierra completamente.
+
+Instrucciones completas: docs/guia_de_uso.md
+Ejemplo sintetico para probar el editor: examples/sample.shproj
+Abrelo con Abrir proyecto. No contiene una captura de datos personales.
+English: docs/user_guide.md (choose English in Ajustes / Settings).
+Validacion y limites: docs/estado_y_validacion.md
+
+La captura de ventana obtiene la zona visible: otras ventanas pueden aparecer.
+El editor y el arranque portable tienen pruebas sinteticas aprobadas.
+Captura corregida: SDR usa GDI y HDR espera un fotograma de escritorio valido.
+Las pruebas reales de captura reciben acceso denegado en el entorno de desarrollo;
+captura, HDR y configuraciones multimonitor requieren validacion en escritorio.
+HDR se convierte a SDR; no hay exportacion HDR nativa.
+
+Licencias del runtime redistribuido: licenses/.
