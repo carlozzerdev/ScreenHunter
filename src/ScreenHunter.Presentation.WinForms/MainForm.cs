@@ -27,14 +27,15 @@ public sealed class MainForm : Form
     public MainForm(EditorSession session, L10n l)
     {
         this.session = session; L = l; Text = "ScreenHunter"; var screen = Screen.PrimaryScreen!.WorkingArea; ClientSize = new Size(Math.Min(1420, screen.Width - 50), Math.Min(900, screen.Height - 100)); MinimumSize = new Size(1060, 650); StartPosition = FormStartPosition.CenterScreen; AutoScaleMode = AutoScaleMode.Dpi; KeyPreview = true;
-        Icon = SystemIcons.Application;
+        using var iconStream = typeof(MainForm).Assembly.GetManifestResourceStream("ScreenHunter.ApplicationIcon")!;
+        Icon = new Icon(iconStream);
         Canvas = new(session); Properties = new(session, l) { Dock = DockStyle.Fill }; propertyHost.Controls.Add(Properties);
         foreach (var tool in Enum.GetValues<EditorTool>())
         {
             var style = new ScreenHunter.Domain.ObjectStyle();
             if (tool == EditorTool.Text) style.Border = false;
             if (tool is EditorTool.Callout or EditorTool.Number) style.Filled = true;
-            if (tool == EditorTool.Highlighter) { style.Stroke = 0xFFFFFF00; style.StrokeWidth = 24; style.Opacity = .3; }
+            if (tool == EditorTool.Highlighter) { style.Stroke = 0xFFFFFF00; style.Opacity = .3; }
             styles[tool] = style;
         }
         Properties.DefaultStyle = styles[EditorTool.Select]; Canvas.NewStyle = Properties.DefaultStyle;

@@ -154,3 +154,6 @@ Hasta 64 megapíxeles, 32 768 píxeles por lado y 2000 objetos. Hasta 50 000 pun
 
 ## Cambios 0.1.2
 El bocadillo muestra cuerpo y texto sin punta triangular, también en proyectos anteriores. En Propiedades, Sombra activa o desactiva una sombra negra desplazada en cualquier objeto o selección múltiple. Se conserva en proyectos, duplicación, deshacer/rehacer y salidas. Está desactivada inicialmente.
+
+
+Los objetos nuevos tienen fondo blanco cuando admiten relleno y grosor de l?nea inicial de 4 p?xeles, incluido el resaltador. El relleno se puede activar en las herramientas que lo tienen desactivado. Los estilos siguen siendo editables y los proyectos conservan sus valores guardados.

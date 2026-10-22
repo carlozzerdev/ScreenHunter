@@ -23,3 +23,6 @@ The editor, project format, import/export and portable startup have synthetic au
 HDR capture code converts FP16 to SDR sRGB with a 203-nit reference white and highlight compression. Native HDR export is not included. Real HDR hardware/color fidelity has not been validated.
 
 Limits: 64 million decoded pixels, 32,768 pixels per side, 2000 objects, 50,000 points per stroke and 500,000 per document. Undo is limited to 80 interactions and an additional geometry/text budget. Fonts missing on another computer use a fallback with a warning.
+
+
+New objects default to a white background where fill is supported and a 4-pixel stroke, including the highlighter. Fill can be enabled for tools where it starts disabled. Styles remain editable and projects retain saved values.

@@ -3,7 +3,9 @@
     <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>ScreenHunter</AssemblyName><ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <ApplicationDefaultFont>Segoe UI, 10pt</ApplicationDefaultFont>
+    <ApplicationIcon>Assets/ScreenHunter.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup><ProjectReference Include="../ScreenHunter.Infrastructure.Windows/ScreenHunter.Infrastructure.Windows.csproj" /></ItemGroup>
   <ItemGroup><EmbeddedResource Include="Resources/*.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Assets/ScreenHunter.ico" LogicalName="ScreenHunter.ApplicationIcon" /></ItemGroup>
 </Project>

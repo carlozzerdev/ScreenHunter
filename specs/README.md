@@ -35,3 +35,7 @@ Más adelante: «Crea la spec 01 para [funcionalidad], analiza el impacto y no i
 
 ## Ampliacion 01
 `01_bocadillo_sombra/`: cambio solicitado el 20/10/2026; sustituye punta de SH00-F03 y amplia estilo de SH00-F05. Implementacion 0.1.2.
+
+## Ampliaci?n 02
+`02_valores_predeterminados/`: fondo blanco y grosor inicial 4, autorizados el 22/10/2026.
+`03_icono_camara/`: icono de camara para ejecutable, ventana y bandeja; autorizado el 22/10/2026.

@@ -41,9 +41,9 @@ public enum ObjectKind { Text, Callout, Arrow, Rectangle, Ellipse, Freehand, Lin
 public sealed class ObjectStyle
 {
     public uint Stroke { get; set; } = 0xFFE54747;
-    public uint Fill { get; set; } = 0xFFFFF2BD;
+    public uint Fill { get; set; } = 0xFFFFFFFF;
     public uint TextColor { get; set; } = 0xFF15243B;
-    public double StrokeWidth { get; set; } = 3;
+    public double StrokeWidth { get; set; } = 4;
     public double Opacity { get; set; } = 1;
     public bool Shadow { get; set; }
     public bool Border { get; set; } = true;
